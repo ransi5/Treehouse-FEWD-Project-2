@@ -5,6 +5,7 @@
 
 body{
   font-family: 'Ubuntu', 'sans-serif';
+  max-width: 100%;
 }
 
 /* General styling */
@@ -20,7 +21,7 @@ nav, .mistake, footer{
 }
 
 .nav-item{
-  margin: 5px 10px;
+  margin: 5px auto;
   padding: 10px 20px;
   background-color: white;
   border-radius: 4px;
@@ -50,7 +51,7 @@ nav, .mistake, footer{
   color: white;
 }
 
-.container p,{
+.container p{
   color: gray;
   font-weight: 300;
   padding: 5px 10px;
@@ -59,8 +60,6 @@ nav, .mistake, footer{
 }
 
 .container img{
-  /* width: calc(100vw - 40px);
-  max-width: 364px; */
   max-width: 100%;
   margin: auto;
   padding: 5px 10px;
@@ -129,14 +128,14 @@ footer a, footer p{
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  width: 100vw;
+  width: 100%;
 }
 
 .container{
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -177,6 +176,10 @@ nav li:hover{
   background-color: yellow;
 }
 
+.name:hover{
+  background-color: inherit;
+}
+
 footer a:hover{
   text-decoration: underline;
   color: yellow;
@@ -187,15 +190,17 @@ footer a:hover{
   .nav{
     width: 80%;
     padding-bottom: 40px;
+    justify-content: center;
   }
 
   .nav-item{
-    min-width: 25%;
-    flex: 1 25%;
+    min-width: 15%;
+    flex: 1 20%;
+    margin: 5px 10px;
   }
 
   .name{
-    flex: 3 100%;
+    flex: 4 100%;
     padding-bottom: 40px;
   }
 
@@ -261,12 +266,12 @@ footer a:hover{
   }
 
   .nav-item{
-    min-width: 15%;
-    flex: 1 15%;
+    min-width: 10%;
+    flex: 1 14%;
   }
 
   .name{
-    flex: 3 45%;
+    flex: 2 30%;
     margin: 5px 10px;
     padding: 10px 20px;
     text-align: left;
